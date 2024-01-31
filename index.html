@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahsis Hesaplama Uygulamasi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="assets/img/splitter.png" alt="splitterYazi">
+
+        <div class="tipCard">
+
+            <div class="leftPart">
+                <p>Bill</p>
+                <div class="billInput">
+                    <img src="assets/img/dolarIcon.png" alt="dolar">
+                    <input type="text" class="bill-input" placeholder="0" required>
+                </div>
+
+                <p>Select Tip %</p>
+
+                <div class="btns">
+                    <button class="btn sabitBtn">5%</button>
+                    <button class="btn sabitBtn"></button>
+                    <button class="btn sabitBtn"></button>
+                    <button class="btn sabitBtn"></button>
+                    <button class="btn sabitBtn"></button>
+                    <input type="text" class="btn" id="customBox" placeholder="Custom" >
+                </div>
+                
+                <div class="number-uyari-bar">
+                    <p>Number of People</p>
+                    <p class="uyari">can't be zero</p>
+                </div>
+
+                <div class="peopleInput">
+                    <img src="assets/img/person.png" alt="dolar">
+                    <input type="text" class="people-input" placeholder="0" required>
+                    <!-- <form>
+                        <input type="text" class="people-input" required>
+                    </form> -->
+                    
+                </div>
+
+            </div>
+
+            <div class="rightPart">
+                <div class="tipAmount">
+                    <div class="tipAmountBlock">
+                        <p>Tip Amount</p>
+                        <p class="person">/ person</p>
+                    </div>
+                    <p class="showTipAmount">$0.00</p>
+                </div>
+                <div class="totalPart">
+                    <div class="totalBlock">
+                        <p>Total</p>
+                        <p class="person">/ person</p>
+                    </div>
+                    <p class="showTotalAmount">$0.00</p>
+                </div> 
+                
+                <button class="resetBtn">RESET</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   
+    
+</body>
+</html>

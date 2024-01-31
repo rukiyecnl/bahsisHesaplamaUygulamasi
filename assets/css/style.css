@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    font-style: normal;   
+}
+.container {
+    display: flex;
+    align-items: center;
+    width: 1440;
+    flex-direction: column;
+    gap: 88px;
+    padding: 163px 260px 239px 260px;
+    background: #C5E4E7;
+}
+
+.tipCard {
+    width: 920px;
+    /* height: 481px; */
+    display: flex;
+    gap: 48px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    padding: 35px 32px 32px 48px;
+}
+
+.leftPart {
+    display: flex;
+    width: 383px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+    & > p{
+        color: #5E7A7D;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    img {
+        position: absolute;
+        z-index: 1;
+        margin: 20px;
+    }
+
+}
+.btns{
+    width: 383px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.bill-input, .people-input{
+    width: 379px;
+    position: relative;
+    height: 48px;
+    border-radius: 5px;
+    background: #F3F9FA;
+    border: none;
+    text-align: right;
+    color: #00474B;
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 17px;
+    margin-top: 6px;
+    margin-bottom: 40px; 
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    background: #00474B; 
+    color: #FFF; 
+    font-size: 24px;
+    font-weight: 700;
+}
+.sabitBtn:hover {
+    background: #9FE8DF;
+    color: #00474B;
+    border: none;
+}
+#customBox {
+    background: #F3F9FA;
+    border: none;
+    color: #547878;
+    text-align: center;
+    cursor: pointer;
+}
+#customBox:focus{
+    text-align: right;
+    padding: 15px;
+    border: 2px  solid;
+    border-color: #26C2AE;
+    background: #F3F9FA;
+}
+#customBox:focus::placeholder {
+    color: transparent;
+}
+
+.rightPart{
+    width: 413px;
+    height: 417px;
+    border-radius: 15px;
+    background: #00474B;
+    padding: 40px;
+}
+.tipAmount, .totalPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tipAmountBlock, .totalBlock{
+    display: block;
+
+    &:first-child {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &:last-child {
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.showTipAmount, .showTotalAmount{
+    color: #26C2AE;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.resetBtn {
+    margin-top: 134px;
+    width: 333px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #26C2AE;
+    border: none;
+}
+
+.number-uyari-bar {
+    display: flex;
+    width: 383px;
+    justify-content: space-between;
+}
+.uyari {
+    display: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    color: #E17457;
+}
+.redBorder{
+    border: 1px solid #E17457;
+}
+.resetBtn {
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;    
+}
+.resetBtn:hover {
+    background: #9FE8DF;
+    color: #00474B;
+}
+
+.totalPart {
+    margin-top: 35px;
+}
+.person {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    color: #7F9D9F;
+}
