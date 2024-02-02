@@ -14,6 +14,8 @@ function init(){
     billInput.value = "";
     peopleInput.value = "";
     customBox.value = "";
+    showTotalAmount.innerHTML = "$0.00";
+    showTipAmount.innerHTML = "$0.00";
     fillBtns();
     accountTip(); 
     sonucHesapla();
